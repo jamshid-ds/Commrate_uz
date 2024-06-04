@@ -1,7 +1,3 @@
-# Commrate_uz
-A project written using Python, which evaluates the positiveness or negativity of the written comment on a scale from 1 to 5 in Uzbek Language
-<br>
-
 # Sentiment Analysis with Various Classification Algorithms and Tokenization Techniques
 
 This project implements a sentiment analysis model using different classification algorithms and tokenization techniques. It follows a structured approach involving data preprocessing, tokenization, feature extraction, model training, and evaluation.
@@ -12,11 +8,11 @@ The code begins by loading two text files containing positive and negative Uzbek
 
 ## 2. Tokenization:
 
-Two tokenizers are used: `BertTokenizerFast` and `AutoTokenizer`. The `BertTokenizerFast` is used to train a new tokenizer based on the provided text corpus. The new tokenizer is then used to tokenize the text data.
+Two tokenizers are used: [BertTokenizerFast](https://huggingface.co/transformers/main_classes/tokenizer.html#transformers.BertTokenizerFast) and [AutoTokenizer](https://huggingface.co/transformers/main_classes/tokenizer.html#transformers.AutoTokenizer). The `BertTokenizerFast` is used to train a new tokenizer based on the provided text corpus. The new tokenizer is then used to tokenize the text data.
 
 ## 3. Feature Extraction:
 
-A `CountVectorizer` is used to convert the tokenized text into numerical features.
+A [`CountVectorizer`](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) is used to convert the tokenized text into numerical features.
 
 ## 4. Model Training and Evaluation:
 
@@ -34,5 +30,8 @@ The code is well-documented with comments explaining the purpose of each section
 ## 6. Additional Information:
 
 - The code utilizes several libraries such as `pandas`, `numpy`, `re`, `transformers`, `sklearn`, `matplotlib`, and `seaborn`.
-- The `dataset.csv` file is assumed to contain labeled text data for training and evaluation.
+- The [Colab notebook](https://colab.research.google.com/drive/1ixWdPzkxmq4kRRHqjCb60rC45N3T9w3e?usp=sharing) provides an interactive environment for running and experimenting with the code.
+- Data sources:
+  - [Hugging Face Dataset](https://huggingface.co/datasets/adkhamboy/sentiment-uz/viewer/default/train)
+  - [GitHub Repository](https://github.com/elmurod1202/uzbek-sentiment-analysis/tree/master/Datasets)
 - The code can be readily adapted to other sentiment analysis tasks by providing appropriate training data and modifying the model parameters.
